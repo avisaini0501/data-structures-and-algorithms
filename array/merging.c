@@ -1,4 +1,4 @@
-//merging for sorted array
+//merging two sorted arrays in sorted manner
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -12,13 +12,15 @@ int main()
 
     while (i < n && j < m)
     {
-        if(arrA[i] < arrB[j])
+        if(arrA[i] < arrB[j]) //if element of array A is smaller than array B , then assign it to arr C
         arrC[k++] = arrA[i++];
 
-        else
+        else                  //else  assign element of arr B
         arrC[k++] = arrB[j++];
     }
 
+    
+    // at last for remaining elements
     for(; i < n; i++)
     {
         arrC[k++] = arrA[i];
