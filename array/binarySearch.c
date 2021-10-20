@@ -1,5 +1,5 @@
 //binary search
-//for binary search array always should be in sort manner
+//for binary search array always should be in sorted manner
 #include<stdio.h>
 #include<stdlib.h>
 
